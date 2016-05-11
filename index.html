@@ -3,17 +3,29 @@
 <head>
 	<title></title>
 
+	<!-- STYLE SHEETS (Vendor & Own)  -->	
 	<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-</head>
-<body>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 
-
-
-
-	<script type="text/javascript" src="js/vendor/jquery-1.12.2.js"></script>
+	<!-- VENDOR JS -->
+	<!-- <script type="text/javascript" src="js/vendor/jquery-1.12.2.js"></script> -->
 	<script type="text/javascript" src="js/vendor/angular.js"></script>
-	<script src="js/vendor/angular-route.js">
+	<script type="text/javascript" src="js/vendor/angular-ui-router.js"></script>
+	<script src="js/vendor/angular-route.js"></script>
+
+	<!-- APP.JS AND CONTROLLERS -->
 	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="site/controllers/main.ctrl.js"></script>
+	<script type="text/javascript" src="site/controllers/main-graph.ctrl.js"></script>
+<!-- <script type="text/javascript" src="site/controllers/"></script>
+	<script type="text/javascript" src="site/controllers/"></script> -->
+
+	<!-- SERVICES -->
+	<!-- <script type="text/javascript" src="site/services/"></script> -->
+</head>
+<body ng-app="myApp">
+
+	<div ui-view></div>
+
 </body>
 </html>
